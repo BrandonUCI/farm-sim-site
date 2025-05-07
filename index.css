@@ -1,9 +1,9 @@
 /* General */
 * {
     font-family: "Roboto";
-    /* border: red; */
-    /* border-style:dashed; */
-    /* border-width: 1px; */
+    /* border: red;
+    border-style:dashed;
+    border-width: 0.5px; */
 }
 
 body {
@@ -40,8 +40,41 @@ nav a {
     color: #F9FAF8;
 }
 
-/* Section 1 */
-.showcase{
+/* Section 1: Showcase */
+.showcase {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    padding: 200px;
+}
+
+.hero {
+    width: 40%;
+    text-align: left;
+}
+
+#showcase_image {
+    max-width: 45%;
+    height:auto;
+}
+
+button {
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    white-space: nowrap;
+    display: block;
+    width: 24%;
+    height: 100%;
+    padding: 1%;
+    font-weight: 550;
+}
+
+.hero button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+
 
 }
 
@@ -49,9 +82,95 @@ nav a {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    margin: 2%;
 }
 
 .hero_secondary {
     font-size: 18px;
     color: #E5E7EB;
+    margin: 2%;
+}
+
+.image_section h1 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+figure img {
+    border: 5px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 12px;
+}
+
+.quote_section {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.quote_section h2 {
+    width: 60%;
+    margin: auto;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote_section h3 {
+    width: 40%;
+    margin-left:auto;
+}
+
+.action_section {
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #3882F6;
+    width: 50%;
+    border-radius: 12px;
+}
+
+.action_content {
+    display:flex;
+    align-items: center;
+    color: #F9FAF8;
+    justify-content:space-between;
+}
+
+.action_text {
+    color: #E5E7EB;
+    align-items: center;
+    margin-left: 5%;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+h5 {
+    margin-top: 0;
+    font-weight: 350;
+}
+
+footer {
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.action_content button {
+   margin-right: 5%;
 }
